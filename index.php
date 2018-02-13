@@ -11,7 +11,18 @@ echo "<br> <br><br>";
  
     $date = date('Y/m/d', time());
     echo "The value of \$date in Y/M/D format: ".$date."<br>";
+ 
+echo "<br>";
+  
     
+    if ($date > $tar) {
+    echo "The Future"; }
+    else if($date < $tar) {
+    echo "The Past";
+    }else{
+      echo"Ooops";
+
+}
 
  
  
