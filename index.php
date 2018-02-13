@@ -7,23 +7,26 @@
 	echo "The value of \$year: ";
 	print_r($year);
  
-echo "<br> <br><br>";
- 
+echo "<br><br> 2. "; 
+
     $date = date('Y/m/d', time());
     echo "The value of \$date in Y/M/D format: ".$date."<br>";
  
-echo "<br>";
-  
-    
+echo "<br> 3. ";     
     if ($date > $tar) {
-    echo "The Future"; }
+      echo "The Future"; }
     else if($date < $tar) {
-    echo "The Past";
+      echo "The Past";
     }else{
-      echo"Ooops";
-
-}
+      echo"Ooops";  }
 
  
- 
+echo "<br> 6. "; 
+  $length = strlen($date);
+  echo "Length of \$date : ".$length."<br>";
+
+echo "<br> 7. ";   
+
+  echo "ASCII value of \$date : ";
+  echo ord($date) ;
 ?>
