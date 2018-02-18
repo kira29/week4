@@ -9,10 +9,11 @@
  
 echo "<br><br> 2. "; 
 
-    $date = date('Y/m/d', time());
+    $date = str_replace('-', '/', $date);
+  
     echo "The value of \$date in Y/M/D format: ".$date."<br>";
  
-echo "<br> 3. \$date compared to \$tar ";     
+echo "<br> 3. \$date compared to \$tar : ";     
     if ($date > $tar) {
       echo "The Future"; }
     else if($date < $tar) {
@@ -49,14 +50,20 @@ echo "<br> 8. ";
    echo "Date Array : ";
     print_r(explode("/",$date));
  echo "<br>";  
- echo "<br> 10. ";  
- 
-  
+ echo "<br> 10. Leap Year <br>";  
  
 
-  
-  
-  
+$datearray = explode("," , $year);
+
+
+foreach ($year as $datearray) {
+  if ((($datearray % 4) == 0) && ((($datearray % 100) != 0) || (($datearray % 400) == 0))) {
+  echo  $datearray. ": True |"; }
+  else {
+  echo $datearray. ": False |"; 
+  }
+
+}
   
   
   
