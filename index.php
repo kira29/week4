@@ -20,7 +20,13 @@ echo "<br> 3. ";
     }else{
       echo"Ooops";  }
 
- 
+echo "<br> 5. ";  
+
+  $worddate = str_word_count($date,0,"");
+  echo "Number of words in \$date : " .$worddate." <br>";
+  
+
+
 echo "<br> 6. "; 
   $length = strlen($date);
   echo "Length of \$date : ".$length."<br>";
@@ -29,4 +35,22 @@ echo "<br> 7. ";
 
   echo "ASCII value of \$date : ";
   echo ord($date) ;
+  
+echo "<br> 8. ";  
+ 
+  $lasttwo = substr($date, -1,0);
+  echo "Last two words in \$date : " .$lasttwo."<br>";
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 ?>
